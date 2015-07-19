@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		46046B101B5BCB6E00E98002 /* CMPopTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46046B0F1B5BCB6E00E98002 /* CMPopTipView.m */; };
-		46046B481B5BE6E700E98002 /* JGTourTip.m in Sources */ = {isa = PBXBuildFile; fileRef = 46046B471B5BE6E700E98002 /* JGTourTip.m */; };
+		46046B501B5C1C9A00E98002 /* CMPopTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46046B4D1B5C1C9A00E98002 /* CMPopTipView.m */; };
+		46046B511B5C1C9A00E98002 /* JGTourTip.m in Sources */ = {isa = PBXBuildFile; fileRef = 46046B4F1B5C1C9A00E98002 /* JGTourTip.m */; };
 		4689AB3B1B5A9C9200EDE1E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4689AB3A1B5A9C9200EDE1E7 /* main.m */; };
 		4689AB3E1B5A9C9200EDE1E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4689AB3D1B5A9C9200EDE1E7 /* AppDelegate.m */; };
 		4689AB411B5A9C9200EDE1E7 /* holeOnAViewPOC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4689AB3F1B5A9C9200EDE1E7 /* holeOnAViewPOC.xcdatamodeld */; };
@@ -31,10 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		46046B0E1B5BCB6E00E98002 /* CMPopTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPopTipView.h; sourceTree = "<group>"; };
-		46046B0F1B5BCB6E00E98002 /* CMPopTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPopTipView.m; sourceTree = "<group>"; };
-		46046B461B5BE6E700E98002 /* JGTourTip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTourTip.h; sourceTree = "<group>"; };
-		46046B471B5BE6E700E98002 /* JGTourTip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTourTip.m; sourceTree = "<group>"; };
+		46046B4C1B5C1C9A00E98002 /* CMPopTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPopTipView.h; sourceTree = "<group>"; };
+		46046B4D1B5C1C9A00E98002 /* CMPopTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPopTipView.m; sourceTree = "<group>"; };
+		46046B4E1B5C1C9A00E98002 /* JGTourTip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTourTip.h; sourceTree = "<group>"; };
+		46046B4F1B5C1C9A00E98002 /* JGTourTip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTourTip.m; sourceTree = "<group>"; };
 		4689AB351B5A9C9100EDE1E7 /* holeOnAViewPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = holeOnAViewPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4689AB391B5A9C9200EDE1E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4689AB3A1B5A9C9200EDE1E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -70,6 +70,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46046B521B5C1C9F00E98002 /* TourTipClasses */ = {
+			isa = PBXGroup;
+			children = (
+				46046B4C1B5C1C9A00E98002 /* CMPopTipView.h */,
+				46046B4D1B5C1C9A00E98002 /* CMPopTipView.m */,
+				46046B4E1B5C1C9A00E98002 /* JGTourTip.h */,
+				46046B4F1B5C1C9A00E98002 /* JGTourTip.m */,
+			);
+			name = TourTipClasses;
+			sourceTree = "<group>";
+		};
 		4689AB2C1B5A9C9100EDE1E7 = {
 			isa = PBXGroup;
 			children = (
@@ -91,15 +102,12 @@
 		4689AB371B5A9C9100EDE1E7 /* holeOnAViewPOC */ = {
 			isa = PBXGroup;
 			children = (
+				46046B521B5C1C9F00E98002 /* TourTipClasses */,
 				4689AB3C1B5A9C9200EDE1E7 /* AppDelegate.h */,
 				4689AB3D1B5A9C9200EDE1E7 /* AppDelegate.m */,
 				4689AB421B5A9C9200EDE1E7 /* ViewController.h */,
 				4689AB431B5A9C9200EDE1E7 /* ViewController.m */,
-				46046B461B5BE6E700E98002 /* JGTourTip.h */,
-				46046B471B5BE6E700E98002 /* JGTourTip.m */,
 				4689AB451B5A9C9200EDE1E7 /* Main.storyboard */,
-				46046B0E1B5BCB6E00E98002 /* CMPopTipView.h */,
-				46046B0F1B5BCB6E00E98002 /* CMPopTipView.m */,
 				4689AB481B5A9C9200EDE1E7 /* Images.xcassets */,
 				4689AB4A1B5A9C9200EDE1E7 /* LaunchScreen.xib */,
 				4689AB3F1B5A9C9200EDE1E7 /* holeOnAViewPOC.xcdatamodeld */,
@@ -240,8 +248,8 @@
 				4689AB411B5A9C9200EDE1E7 /* holeOnAViewPOC.xcdatamodeld in Sources */,
 				4689AB441B5A9C9200EDE1E7 /* ViewController.m in Sources */,
 				4689AB3B1B5A9C9200EDE1E7 /* main.m in Sources */,
-				46046B481B5BE6E700E98002 /* JGTourTip.m in Sources */,
-				46046B101B5BCB6E00E98002 /* CMPopTipView.m in Sources */,
+				46046B511B5C1C9A00E98002 /* JGTourTip.m in Sources */,
+				46046B501B5C1C9A00E98002 /* CMPopTipView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,7 @@
 #import "CMPopTipView.h"
 
 
-@interface ViewController : UIViewController <CMPopTipViewDelegate>
+@interface ViewController : UIViewController 
 
 
 @end
