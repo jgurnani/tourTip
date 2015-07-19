@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6246"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ipad.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Rvg-im-QEg">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bm-sV-POf">
+                                <rect key="frame" x="281" y="285" width="39" height="30"/>
+                                <state key="normal" title="Press">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3dw-BU-qIH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1K-Wg-knu">
+                                <rect key="frame" x="75" y="62" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="YAV-Xp-f3b"/>
+                                    <constraint firstAttribute="width" constant="70" id="dML-zy-CjZ"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1na-Si-qrn">
+                                <rect key="frame" x="479" y="520" width="55" height="30"/>
+                                <state key="normal" title="Button2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPr-pn-oua">
+                                <rect key="frame" x="508" y="28" width="46" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="pdR-jr-69O"/>
+                                    <constraint firstAttribute="height" constant="99" id="yD8-2U-Rxu"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="UPr-pn-oua" secondAttribute="trailing" constant="30" id="BWL-xc-HAQ"/>
+                            <constraint firstItem="Rvg-im-QEg" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="BdP-oS-dgP"/>
+                            <constraint firstItem="UPr-pn-oua" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="CLd-wZ-QWX"/>
+                            <constraint firstAttribute="centerY" secondItem="8bm-sV-POf" secondAttribute="centerY" id="Chu-Gi-2gd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1na-Si-qrn" secondAttribute="trailing" constant="50" id="JIt-Gy-VsX"/>
+                            <constraint firstItem="Rvg-im-QEg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="YfT-Bl-hcm"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="1na-Si-qrn" secondAttribute="bottom" constant="50" id="alg-sC-AqE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rvg-im-QEg" secondAttribute="trailing" constant="-16" id="c39-Si-moi"/>
+                            <constraint firstAttribute="centerX" secondItem="8bm-sV-POf" secondAttribute="centerX" id="cTh-Jy-ZjX"/>
+                            <constraint firstItem="Rvg-im-QEg" firstAttribute="leading" secondItem="Z1K-Wg-knu" secondAttribute="trailing" constant="-145" id="iZG-Fe-4eh"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Rvg-im-QEg" secondAttribute="bottom" id="rWD-5c-EJ8"/>
+                            <constraint firstItem="Rvg-im-QEg" firstAttribute="top" secondItem="Z1K-Wg-knu" secondAttribute="bottom" constant="-132" id="xh3-V6-BAF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomLeftButton" destination="1na-Si-qrn" id="TvF-tA-fgS"/>
+                        <outlet property="buttonToHighlight" destination="Z1K-Wg-knu" id="mbF-h9-JBw"/>
+                        <outlet property="centerPressButton" destination="8bm-sV-POf" id="m2V-8b-AZG"/>
+                        <outlet property="insertedNewButton" destination="UPr-pn-oua" id="uf0-rZ-P2a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ipad.jpg" width="900" height="600"/>
+    </resources>
+</document>
