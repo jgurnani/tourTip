@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		46046B501B5C1C9A00E98002 /* CMPopTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46046B4D1B5C1C9A00E98002 /* CMPopTipView.m */; };
-		46046B511B5C1C9A00E98002 /* JGTourTip.m in Sources */ = {isa = PBXBuildFile; fileRef = 46046B4F1B5C1C9A00E98002 /* JGTourTip.m */; };
 		4689AB3B1B5A9C9200EDE1E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4689AB3A1B5A9C9200EDE1E7 /* main.m */; };
 		4689AB3E1B5A9C9200EDE1E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4689AB3D1B5A9C9200EDE1E7 /* AppDelegate.m */; };
 		4689AB411B5A9C9200EDE1E7 /* holeOnAViewPOC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4689AB3F1B5A9C9200EDE1E7 /* holeOnAViewPOC.xcdatamodeld */; };
@@ -18,6 +16,8 @@
 		4689AB4C1B5A9C9200EDE1E7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4689AB4A1B5A9C9200EDE1E7 /* LaunchScreen.xib */; };
 		4689AB581B5A9C9200EDE1E7 /* holeOnAViewPOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4689AB571B5A9C9200EDE1E7 /* holeOnAViewPOCTests.m */; };
 		4689AB621B5A9CC700EDE1E7 /* ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4689AB611B5A9CC700EDE1E7 /* ipad.jpg */; };
+		469866771B5C24F200FAD43E /* CMPopTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 469866741B5C24F200FAD43E /* CMPopTipView.m */; };
+		469866781B5C24F200FAD43E /* JGTourTip.m in Sources */ = {isa = PBXBuildFile; fileRef = 469866761B5C24F200FAD43E /* JGTourTip.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,10 +31,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		46046B4C1B5C1C9A00E98002 /* CMPopTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPopTipView.h; sourceTree = "<group>"; };
-		46046B4D1B5C1C9A00E98002 /* CMPopTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPopTipView.m; sourceTree = "<group>"; };
-		46046B4E1B5C1C9A00E98002 /* JGTourTip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTourTip.h; sourceTree = "<group>"; };
-		46046B4F1B5C1C9A00E98002 /* JGTourTip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTourTip.m; sourceTree = "<group>"; };
 		4689AB351B5A9C9100EDE1E7 /* holeOnAViewPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = holeOnAViewPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4689AB391B5A9C9200EDE1E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4689AB3A1B5A9C9200EDE1E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,6 +46,10 @@
 		4689AB561B5A9C9200EDE1E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4689AB571B5A9C9200EDE1E7 /* holeOnAViewPOCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = holeOnAViewPOCTests.m; sourceTree = "<group>"; };
 		4689AB611B5A9CC700EDE1E7 /* ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ipad.jpg; sourceTree = "<group>"; };
+		469866731B5C24F200FAD43E /* CMPopTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPopTipView.h; sourceTree = "<group>"; };
+		469866741B5C24F200FAD43E /* CMPopTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPopTipView.m; sourceTree = "<group>"; };
+		469866751B5C24F200FAD43E /* JGTourTip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGTourTip.h; sourceTree = "<group>"; };
+		469866761B5C24F200FAD43E /* JGTourTip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGTourTip.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +73,10 @@
 		46046B521B5C1C9F00E98002 /* TourTipClasses */ = {
 			isa = PBXGroup;
 			children = (
-				46046B4C1B5C1C9A00E98002 /* CMPopTipView.h */,
-				46046B4D1B5C1C9A00E98002 /* CMPopTipView.m */,
-				46046B4E1B5C1C9A00E98002 /* JGTourTip.h */,
-				46046B4F1B5C1C9A00E98002 /* JGTourTip.m */,
+				469866731B5C24F200FAD43E /* CMPopTipView.h */,
+				469866741B5C24F200FAD43E /* CMPopTipView.m */,
+				469866751B5C24F200FAD43E /* JGTourTip.h */,
+				469866761B5C24F200FAD43E /* JGTourTip.m */,
 			);
 			name = TourTipClasses;
 			sourceTree = "<group>";
@@ -248,8 +248,8 @@
 				4689AB411B5A9C9200EDE1E7 /* holeOnAViewPOC.xcdatamodeld in Sources */,
 				4689AB441B5A9C9200EDE1E7 /* ViewController.m in Sources */,
 				4689AB3B1B5A9C9200EDE1E7 /* main.m in Sources */,
-				46046B511B5C1C9A00E98002 /* JGTourTip.m in Sources */,
-				46046B501B5C1C9A00E98002 /* CMPopTipView.m in Sources */,
+				469866781B5C24F200FAD43E /* JGTourTip.m in Sources */,
+				469866771B5C24F200FAD43E /* CMPopTipView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
