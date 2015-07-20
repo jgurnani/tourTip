@@ -33,7 +33,7 @@
 
 
 @property (nonatomic, strong) CMPopTipView * popUpView;
-
+@property (nonatomic) CGFloat paddingForHighlight;
 
 
 @end

@@ -40,6 +40,7 @@
     NSArray * messageArray = [[NSArray alloc]initWithObjects:@"This is demo message for top right button",@"This is demo message for center button",@"Wow Here's the new button. It seems awesome to use !!!",@"This is demo button for bottom left button", nil];
     
     JGTourTip * tourTip = [[JGTourTip alloc]initWithViews:viewArray withMessages:messageArray onScreen:self.view];
+    tourTip.paddingForHighlight = 30;
     [tourTip showTourTip];
     
 

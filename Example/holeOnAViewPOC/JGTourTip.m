@@ -31,7 +31,7 @@
     UIView * baseViewForTourTip;
     NSArray * viewsForHighlights;
     NSArray * messageForHighlights;
-    
+    CGFloat paddingForHighlight;
     
     
     UIView * blackOverlay;
@@ -45,15 +45,28 @@
         baseViewForTourTip = baseView;
         viewsForHighlights = viewArray;
         messageForHighlights = messageArray;
+   
     }
     return self;
 }
 
 -(void)showTourTip
 {
+    [self configureProperties];
     [self addBlackOverlayAndTourTipForView:[viewsForHighlights objectAtIndex:0] withMessage:[messageForHighlights objectAtIndex:0]];
 }
 
+-(void)configureProperties
+{
+    if(_paddingForHighlight != 0)
+    {
+        paddingForHighlight = _paddingForHighlight;
+    }
+    else
+    {
+        paddingForHighlight = 10;
+    }
+}
 
 -(void)addBlackOverlayAndTourTipForView:(UIView *)viewToBeHighlighted withMessage:(NSString *)message
 {
@@ -67,7 +80,7 @@
     maskLayer.frame = bounds;
     maskLayer.fillColor = [UIColor blackColor].CGColor;
     
-    CGRect const circleRect = CGRectMake(viewToBeHighlighted.frame.origin.x -10 + 100, viewToBeHighlighted.frame.origin.y - 10 + 100, viewToBeHighlighted.frame.size.width + 20, viewToBeHighlighted.frame.size.height + 20);
+    CGRect const circleRect = CGRectMake(viewToBeHighlighted.frame.origin.x -paddingForHighlight + 100, viewToBeHighlighted.frame.origin.y - paddingForHighlight + 100, viewToBeHighlighted.frame.size.width + (paddingForHighlight * 2), viewToBeHighlighted.frame.size.height + (paddingForHighlight * 2));
     UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:circleRect];
     [path appendPath:[UIBezierPath bezierPathWithRect:blackOverlay.bounds]];
     maskLayer.path = path.CGPath;
@@ -91,6 +104,8 @@
         _popUpView.hasShadow = NO;
         _popUpView.dismissTapAnywhere = YES;
         _popUpView.delegate = self;
+        _popUpView.topMargin = _paddingForHighlight;
+        
         [_popUpView presentPointingAtView:viewToBeHighlighted inView:baseViewForTourTip animated:YES];
 
         
