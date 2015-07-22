@@ -57,6 +57,7 @@
 
 -(void)addBlackOverlayAndTourTipForView:(UIView *)viewToBeHighlighted withMessage:(NSString *)message
 {
+    
     blackOverlay = [[UIView alloc]initWithFrame:CGRectMake(-1000, -1000, 3000, 3000)];
     blackOverlay.backgroundColor = [UIColor blackColor];
     blackOverlay.alpha = 0.7;

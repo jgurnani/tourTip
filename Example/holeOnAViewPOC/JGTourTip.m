@@ -70,6 +70,8 @@
 
 -(void)addBlackOverlayAndTourTipForView:(UIView *)viewToBeHighlighted withMessage:(NSString *)message
 {
+    CGRect viewBound = [viewToBeHighlighted.superview convertRect:viewToBeHighlighted.frame toView:baseViewForTourTip];
+    
     blackOverlay = [[UIView alloc]initWithFrame:CGRectMake(-1000, -1000, 3000, 3000)];
     blackOverlay.backgroundColor = [UIColor blackColor];
     blackOverlay.alpha = 0.7;
@@ -80,7 +82,7 @@
     maskLayer.frame = bounds;
     maskLayer.fillColor = [UIColor blackColor].CGColor;
     
-    CGRect const circleRect = CGRectMake(viewToBeHighlighted.frame.origin.x -paddingForHighlight + 100, viewToBeHighlighted.frame.origin.y - paddingForHighlight + 100, viewToBeHighlighted.frame.size.width + (paddingForHighlight * 2), viewToBeHighlighted.frame.size.height + (paddingForHighlight * 2));
+    CGRect const circleRect = CGRectMake(viewBound.origin.x -paddingForHighlight + 100, viewBound.origin.y - paddingForHighlight + 100, viewBound.size.width + (paddingForHighlight * 2), viewBound.size.height + (paddingForHighlight * 2));
     UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:circleRect];
     [path appendPath:[UIBezierPath bezierPathWithRect:blackOverlay.bounds]];
     maskLayer.path = path.CGPath;
